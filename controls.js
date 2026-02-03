@@ -8,7 +8,7 @@ class Controls{
         this.#addKeyboardListeners();
     }
     #addKeyboardListeners(){
-        document.onkeyup=(event)=>{
+        document.onkeydown=(event)=>{
             switch(event.key){
                 case "ArrowLeft":
                     this.left=true;
@@ -24,7 +24,7 @@ class Controls{
                     break;
             }
         };
-        document.onkeydown=(event)=>{
+        document.onkeyup=(event)=>{
             switch(event.key){
                 case "ArrowLeft":
                     this.left=false;
